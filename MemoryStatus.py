@@ -6,8 +6,10 @@ my_memory_application = Flask(__name__)
 
 @my_memory_application.route('/metrics')
 def getMemoryPercentage():
+   data=dict()
+   data['memory_usage']=str(psutil.virtual_memory().percent)
    response = my_memory_application.response_class(
-        response=json.dumps("{ memory_usage: "+str(psutil.virtual_memory().percent)+"}"),
+        response=json.dumps(data),
         status=200,
         mimetype='application/json'
     )
