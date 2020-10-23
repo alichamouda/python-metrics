@@ -13,4 +13,4 @@ def getHome():
    return render_template("welcome.html")
 
 if __name__ == '__main__':
-   my_memory_application.run(port='8080')
+   my_memory_application.run(host='0.0.0.0', port='8080')
