@@ -6,7 +6,7 @@ my_memory_application = Flask(__name__)
 
 @my_memory_application.route('/metrics')
 def getMemoryPercentage():
-   return str(psutil.virtual_memory().percent)
+   return "{ memory_usage: "+str(psutil.virtual_memory().percent)+"}"
 
 @my_memory_application.route('/')
 def getHome():
