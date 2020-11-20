@@ -13,7 +13,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        run: echo Checkout complete ... 
       - name: Running init command
         run: | 
           make init
@@ -25,7 +24,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        run: echo Checkout complete ... 
       - name: Running test command
         run: make test
       - name: Running benchmark command
@@ -37,6 +35,5 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        run: echo Checkout complete ... 
       - name: Starting
         run: make run
