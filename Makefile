@@ -3,7 +3,7 @@ PORT = 8080
 init:
 	sudo apt update -y
 	sudo apt install -y python3.8
-	sudo apt install -y python-setuptools
+	sudo apt install python3-setuptools
 	sudo apt install -y python3-pip
 	pip3 install -r requirements.txt
 
