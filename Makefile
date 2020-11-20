@@ -14,5 +14,5 @@ benchmark: init
 	python3 -c "import cProfile;cProfile.run('import test;test.main()');"  
 
 run: test
-	kill $$(lsof -t -i:${PORT}) | true
+	kill $(lsof -t -i:${PORT}) | true
 	python3 main.py &
