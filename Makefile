@@ -11,7 +11,7 @@ test: init
 	python3 -c "import test;test.main()"  
 
 benchmark: init
-	python3 -c "import cProfile;cProfile.run('import factoriel;factoriel.main()');"  
+	python3 -c "import cProfile;cProfile.run('import test;test.main()');"  
 
 run: test
 	kill $$(lsof -t -i:${PORT}) | true

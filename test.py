@@ -2,7 +2,7 @@ import factoriel
 
 def test_factorial_of():
     assert factoriel.factorial_of(55,factoriel.Factorial_type.ITERATIVE) == 12696403353658275925965100847566516959580321051449436762275840000000000000
-    assert factoriel.factorial_of(5 ,factoriel.Factorial_type.ITERATIVE) == 120
+    assert factoriel.factorial_of(5 ,factoriel.Factorial_type.RECURSIVE) == 120
     assert factoriel.factorial_of(10,factoriel.Factorial_type.ITERATIVE) == 3628800
     return 0
 
