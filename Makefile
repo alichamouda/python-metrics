@@ -1,4 +1,3 @@
-JAR_PATH = ./target
 PORT = 8080
 
 init:

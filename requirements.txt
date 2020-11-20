@@ -1,2 +1,2 @@
-# install flask
-# install psutil
+Flask==1.1.2
+psutil==5.7.2
