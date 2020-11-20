@@ -1,10 +1,10 @@
-PORT = 8080
+
 
 init:
-	sudo apt update -y
-	sudo apt install -y python3.8
-	sudo apt install python3-setuptools
-	sudo apt install -y python3-pip
+	apt update -y
+	apt install -y python3
+	apt install -y python3-setuptools
+	apt install -y python3-pip
 	pip3 install -r requirements.txt
 
 test: init
@@ -14,5 +14,4 @@ benchmark: init
 	python3 -c "import cProfile;cProfile.run('import test;test.main()');"  
 
 run: test
-	kill $(lsof -t -i:${PORT}) | true
-	python3 main.py &
+	python3 main.py 
